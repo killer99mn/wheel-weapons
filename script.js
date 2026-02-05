@@ -1,4 +1,4 @@
-// اتصال WebSocket
+// اتصال WebSocket به سرور Render
 const ws = new WebSocket("wss://wheel-weapons-server.onrender.com");
 
 // HP بازیکن‌ها
@@ -20,7 +20,7 @@ const weapons = [
   "Tactical Grenade"
 ];
 
-// چرخش گردونه
+// وقتی دکمه چرخش زده می‌شود
 spinBtn.onclick = () => {
   const degree = Math.floor(2000 + Math.random() * 2000);
   wheel.style.transform = rotate(${degree}deg);
